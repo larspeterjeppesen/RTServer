@@ -1,0 +1,5 @@
+# Caddy
+caddy reverse-proxy --to :8000
+
+# Webserver
+cargo run

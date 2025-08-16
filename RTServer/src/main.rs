@@ -14,5 +14,6 @@ The Explorer is adept at dealing with a particular social group or organisation.
 
 #[launch]
 fn rocket() -> Rocket<Build> {
-    rocket::build().mount("/", routes![index])
+    rocket::build()
+        .mount("/", routes![index])
 }

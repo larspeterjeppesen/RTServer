@@ -11,3 +11,10 @@ sudo apt install caddy
 # tmux
 sudo apt install tmux
 cp .tmux.conf ~/.tmux.conf
+
+
+# certbot for letsencrypt cert
+# https://certbot.eff.org/instructions?ws=other&os=snap
+sudo apt install snapd
+sudo snap install --classic certbot
+

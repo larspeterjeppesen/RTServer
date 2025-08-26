@@ -1,5 +1,5 @@
 # Caddy
-caddy reverse-proxy --to :8000
+caddy reverse-proxy -from rtadat.dk --to :8080
 
 # Webserver
 cargo run

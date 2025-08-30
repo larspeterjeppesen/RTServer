@@ -1,0 +1,7 @@
+rtdata.dk {
+	reverse_proxy :8080
+}
+
+www.rtdata.dk {
+	reverse_proxy :8080
+}

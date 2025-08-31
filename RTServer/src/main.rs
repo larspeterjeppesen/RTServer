@@ -1,76 +1,16 @@
 #[macro_use] extern crate rocket;
 use rocket::{Rocket, Build};
-
+use rocket::http::ContentType;
 
 #[get("/")]
-fn index() -> &'static str {
-"<h1>Peer</h1>
-
-Prerequisites: Fellowship 30
-Talent Groups: Academics, Adeptus Arbites, Adeptus Mechanicus, Administratum, Astropaths, Ecclesiarchy, Feral Worlders, Government, Hivers, Inquisition, Middle Classes, Military, Nobility, the Insane, Underworld, Void Born, Workers.
-The Explorer is adept at dealing with a particular social group or organisation. He gains a +10 bonus to all Fellowship Tests when interacting with the chosen group.    
-Prerequisites: Fellowship 30
-Talent Groups: Academics, Adeptus Arbites, Adeptus Mechanicus, Administratum, Astropaths, Ecclesiarchy, Feral Worlders, Government, Hivers, Inquisition, Middle Classes, Military, Nobility, the Insane, Underworld, Void Born, Workers.
-The Explorer is adept at dealing with a particular social group or organisation. He gains a +10 bonus to all Fellowship Tests when interacting with the chosen group.    
-Prerequisites: Fellowship 30
-Talent Groups: Academics, Adeptus Arbites, Adeptus Mechanicus, Administratum, Astropaths, Ecclesiarchy, Feral Worlders, Government, Hivers, Inquisition, Middle Classes, Military, Nobility, the Insane, Underworld, Void Born, Workers.
-The Explorer is adept at dealing with a particular social group or organisation. He gains a +10 bonus to all Fellowship Tests when interacting with the chosen group.    
-Prerequisites: Fellowship 30
-Talent Groups: Academics, Adeptus Arbites, Adeptus Mechanicus, Administratum, Astropaths, Ecclesiarchy, Feral Worlders, Government, Hivers, Inquisition, Middle Classes, Military, Nobility, the Insane, Underworld, Void Born, Workers.
-The Explorer is adept at dealing with a particular social group or organisation. He gains a +10 bonus to all Fellowship Tests when interacting with the chosen group.    
-Prerequisites: Fellowship 30
-Talent Groups: Academics, Adeptus Arbites, Adeptus Mechanicus, Administratum, Astropaths, Ecclesiarchy, Feral Worlders, Government, Hivers, Inquisition, Middle Classes, Military, Nobility, the Insane, Underworld, Void Born, Workers.
-The Explorer is adept at dealing with a particular social group or organisation. He gains a +10 bonus to all Fellowship Tests when interacting with the chosen group.    
-Prerequisites: Fellowship 30
-Talent Groups: Academics, Adeptus Arbites, Adeptus Mechanicus, Administratum, Astropaths, Ecclesiarchy, Feral Worlders, Government, Hivers, Inquisition, Middle Classes, Military, Nobility, the Insane, Underworld, Void Born, Workers.
-The Explorer is adept at dealing with a particular social group or organisation. He gains a +10 bonus to all Fellowship Tests when interacting with the chosen group.    
-Prerequisites: Fellowship 30
-Talent Groups: Academics, Adeptus Arbites, Adeptus Mechanicus, Administratum, Astropaths, Ecclesiarchy, Feral Worlders, Government, Hivers, Inquisition, Middle Classes, Military, Nobility, the Insane, Underworld, Void Born, Workers.
-The Explorer is adept at dealing with a particular social group or organisation. He gains a +10 bonus to all Fellowship Tests when interacting with the chosen group.    
-Prerequisites: Fellowship 30
-Talent Groups: Academics, Adeptus Arbites, Adeptus Mechanicus, Administratum, Astropaths, Ecclesiarchy, Feral Worlders, Government, Hivers, Inquisition, Middle Classes, Military, Nobility, the Insane, Underworld, Void Born, Workers.
-The Explorer is adept at dealing with a particular social group or organisation. He gains a +10 bonus to all Fellowship Tests when interacting with the chosen group.    
-Prerequisites: Fellowship 30
-Talent Groups: Academics, Adeptus Arbites, Adeptus Mechanicus, Administratum, Astropaths, Ecclesiarchy, Feral Worlders, Government, Hivers, Inquisition, Middle Classes, Military, Nobility, the Insane, Underworld, Void Born, Workers.
-The Explorer is adept at dealing with a particular social group or organisation. He gains a +10 bonus to all Fellowship Tests when interacting with the chosen group.    
-Prerequisites: Fellowship 30
-Talent Groups: Academics, Adeptus Arbites, Adeptus Mechanicus, Administratum, Astropaths, Ecclesiarchy, Feral Worlders, Government, Hivers, Inquisition, Middle Classes, Military, Nobility, the Insane, Underworld, Void Born, Workers.
-The Explorer is adept at dealing with a particular social group or organisation. He gains a +10 bonus to all Fellowship Tests when interacting with the chosen group.    
-Prerequisites: Fellowship 30
-Talent Groups: Academics, Adeptus Arbites, Adeptus Mechanicus, Administratum, Astropaths, Ecclesiarchy, Feral Worlders, Government, Hivers, Inquisition, Middle Classes, Military, Nobility, the Insane, Underworld, Void Born, Workers.
-The Explorer is adept at dealing with a particular social group or organisation. He gains a +10 bonus to all Fellowship Tests when interacting with the chosen group.    
-Prerequisites: Fellowship 30
-Talent Groups: Academics, Adeptus Arbites, Adeptus Mechanicus, Administratum, Astropaths, Ecclesiarchy, Feral Worlders, Government, Hivers, Inquisition, Middle Classes, Military, Nobility, the Insane, Underworld, Void Born, Workers.
-The Explorer is adept at dealing with a particular social group or organisation. He gains a +10 bonus to all Fellowship Tests when interacting with the chosen group.    
-Prerequisites: Fellowship 30
-Talent Groups: Academics, Adeptus Arbites, Adeptus Mechanicus, Administratum, Astropaths, Ecclesiarchy, Feral Worlders, Government, Hivers, Inquisition, Middle Classes, Military, Nobility, the Insane, Underworld, Void Born, Workers.
-The Explorer is adept at dealing with a particular social group or organisation. He gains a +10 bonus to all Fellowship Tests when interacting with the chosen group.    
-Prerequisites: Fellowship 30
-Talent Groups: Academics, Adeptus Arbites, Adeptus Mechanicus, Administratum, Astropaths, Ecclesiarchy, Feral Worlders, Government, Hivers, Inquisition, Middle Classes, Military, Nobility, the Insane, Underworld, Void Born, Workers.
-The Explorer is adept at dealing with a particular social group or organisation. He gains a +10 bonus to all Fellowship Tests when interacting with the chosen group.    
-Prerequisites: Fellowship 30
-Talent Groups: Academics, Adeptus Arbites, Adeptus Mechanicus, Administratum, Astropaths, Ecclesiarchy, Feral Worlders, Government, Hivers, Inquisition, Middle Classes, Military, Nobility, the Insane, Underworld, Void Born, Workers.
-The Explorer is adept at dealing with a particular social group or organisation. He gains a +10 bonus to all Fellowship Tests when interacting with the chosen group.    
-Prerequisites: Fellowship 30
-Talent Groups: Academics, Adeptus Arbites, Adeptus Mechanicus, Administratum, Astropaths, Ecclesiarchy, Feral Worlders, Government, Hivers, Inquisition, Middle Classes, Military, Nobility, the Insane, Underworld, Void Born, Workers.
-The Explorer is adept at dealing with a particular social group or organisation. He gains a +10 bonus to all Fellowship Tests when interacting with the chosen group.    
-Prerequisites: Fellowship 30
-Talent Groups: Academics, Adeptus Arbites, Adeptus Mechanicus, Administratum, Astropaths, Ecclesiarchy, Feral Worlders, Government, Hivers, Inquisition, Middle Classes, Military, Nobility, the Insane, Underworld, Void Born, Workers.
-The Explorer is adept at dealing with a particular social group or organisation. He gains a +10 bonus to all Fellowship Tests when interacting with the chosen group.    
-Prerequisites: Fellowship 30
-Talent Groups: Academics, Adeptus Arbites, Adeptus Mechanicus, Administratum, Astropaths, Ecclesiarchy, Feral Worlders, Government, Hivers, Inquisition, Middle Classes, Military, Nobility, the Insane, Underworld, Void Born, Workers.
-The Explorer is adept at dealing with a particular social group or organisation. He gains a +10 bonus to all Fellowship Tests when interacting with the chosen group.    
-Prerequisites: Fellowship 30
-Talent Groups: Academics, Adeptus Arbites, Adeptus Mechanicus, Administratum, Astropaths, Ecclesiarchy, Feral Worlders, Government, Hivers, Inquisition, Middle Classes, Military, Nobility, the Insane, Underworld, Void Born, Workers.
-The Explorer is adept at dealing with a particular social group or organisation. He gains a +10 bonus to all Fellowship Tests when interacting with the chosen group.    
-    
+fn index() -> (ContentType, &'static str) {
+    let content = "<h1>Peer</h1>   
 <pre id=\"Peer\">
 Prerequisites: Fellowship 30
 Talent Groups: Academics, Adeptus Arbites, Adeptus Mechanicus, Administratum, Astropaths, Ecclesiarchy, Feral Worlders, Government, Hivers, Inquisition, Middle Classes, Military, Nobility, the Insane, Underworld, Void Born, Workers.
 The Explorer is adept at dealing with a particular social group or organisation. He gains a +10 bonus to all Fellowship Tests when interacting with the chosen group.    
-</pre>
-"
-    
+</pre>";
+    (ContentType::HTML, content)
 }
 
 #[launch]

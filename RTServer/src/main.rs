@@ -313,7 +313,7 @@ A liturgical circuit has been implanted within the Explorer’s skull, allowing 
 PaRaNoIa
 The Explorer knows that danger lurks behind every corner and knows the galaxy will hit him as soon as he lets his guard down. The character gains a +2 bonus on Initiative rolls, and the GM may secretly Test his Perception to notice hidden threats. The price of his eternal vigilance is a twitchy disposition and the inability to relax.
 
-Peer
+<pre id=\"Peer\">Peer</pre>
 Prerequisites: Fellowship 30
 Talent Groups: Academics, Adeptus Arbites, Adeptus Mechanicus, Administratum, Astropaths, Ecclesiarchy, Feral Worlders, Government, Hivers, Inquisition, Middle Classes, Military, Nobility, the Insane, Underworld, Void Born, Workers.
 The Explorer is adept at dealing with a particular social group or organisation. He gains a +10 bonus to all Fellowship Tests when interacting with the chosen group.

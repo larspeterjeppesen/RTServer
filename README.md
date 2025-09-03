@@ -17,10 +17,10 @@ Simple server to make some rpg data available for lookups for my rogue trader rp
 ## Development
 1. Display all talents on the website
   - Raw text to start with
-  - Write a python script to format the raw string of talents:
+  - Write a python script to format the raw string of talents (IN PROGRESS):
     - Break up prerequisite lines properly
       - Come up with regexp pattern (DONE)
       - Write logic to match and break the lines
-    - Proper capitalization
+    - Proper capitalization (DONE)
     - Correct newlines
   - Write a python script to format it to html with headers and id's to allow fragment identification

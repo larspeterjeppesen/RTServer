@@ -12,7 +12,7 @@ Simple server to make some rpg data available for lookups for my rogue trader rp
   - This needs to be configured using a Caddyfile and run as a background service instead
   - Resource: https://caddyserver.com/docs/running
 1. Setup service to run caddy and webserver on reboot/crash
-
+  - Create dedicated user to run service
 
 ## Development
 1. Display all talents on the website

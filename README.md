@@ -22,5 +22,6 @@ Simple server to make some rpg data available for lookups for my rogue trader rp
       - Come up with regexp pattern (DONE)
       - Write logic to match and break the lines
     - Proper capitalization (DONE)
-    - Correct newlines
+    - Correct newlines (DONE)
   - Write a python script to format it to html with headers and id's to allow fragment identification
+    - Write luminen charge exception

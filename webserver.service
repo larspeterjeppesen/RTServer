@@ -1,0 +1,19 @@
+[Unit]
+Description=rtdata.dk webserver
+After=network.target
+
+[Service]
+Type=simple
+User=root
+Group=root
+WorkingDirectory=~/server/RTServer/RTServer
+ExecStart=~/server/RTServer/RTServer/target/debug/RTServer
+ExecReload=/bin/kill -s HUP $MAINPID
+Restart=on-failure
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=rtserver
+
+[Install]
+WantedBy=multi-user.target

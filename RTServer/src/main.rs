@@ -12,7 +12,7 @@ fn index() -> (ContentType, String) {
     let mut source_file = File::open(SOURCE_FILEPATH).unwrap();
     let mut content = String::new();
     source_file.read_to_string(&mut content);
-    println!("{content}");
+    // println!("{content}");
     // let content = "<h1>Peer</h1>   
 // <pre id=\"Peer\">
 // Prerequisites: Fellowship 30

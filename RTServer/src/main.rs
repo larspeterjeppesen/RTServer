@@ -5,7 +5,7 @@ use std::fs::File;
 use std::io::prelude::*;
 
 
-const SOURCE_FILEPATH : &str= "data/output.txt";
+const SOURCE_FILEPATH : &str= "data/RT_talents.txt";
 
 #[get("/")]
 fn index() -> (ContentType, String) {

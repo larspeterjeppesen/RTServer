@@ -1,0 +1,4 @@
+testserver;54.246.248.154;~/.ssh/RTServerTest.pem
+liveserver;rtdata.dk;~/.ssh/RTServer.pem
+git_repository;https://github.com/larspeterjeppesen/RTServer.git
+server_port;8080
